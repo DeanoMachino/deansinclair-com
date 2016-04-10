@@ -87,104 +87,62 @@
         <div id="slider" class="sl-slider-wrapper">
           <div class="sl-slider">
 
-
-            <!-- Slide -->
-            <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
+            <!-- Slide 1 -->
+            <div class="sl-slide bg-1" data-orientation="vertical" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
               <div class="sl-slide-inner">
-                <div class="bg-img bg-img-1"></div>
-                <h2>Slide #1 inner</h2>
+                <a href="#">
+                <div class="deco" data-icon="H"></div>
+                <h2>Slide #1</h2>
+                <blockquote>
+                  <p>Some quote or caption of sorts</p>
+                  <cite>Some other info (guy who said it)</cite>
+                </blockquote>
+              </a>
+              </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="sl-slide bg-2" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
+              <div class="sl-slide-inner">
+                <div class="deco" data-icon="H"></div>
+                <h2>Slide #2</h2>
                 <blockquote>
                   <p>Some quote or caption of sorts</p>
                   <cite>Some other info (guy who said it)</cite>
                 </blockquote>
               </div>
             </div>
-
-            <!-- Slide -->
-            <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
+            <!-- Slide 3 -->
+            <div class="sl-slide bg-3" data-orientation="vertical" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
               <div class="sl-slide-inner">
-                <div class="bg-img bg-img-2"></div>
-                <h2>Slide #2 inner</h2>
+                <div class="deco" data-icon="H"></div>
+                <h2>Slide #3</h2>
                 <blockquote>
                   <p>Some quote or caption of sorts</p>
                   <cite>Some other info (guy who said it)</cite>
                 </blockquote>
               </div>
             </div>
-
-            <!-- Slide -->
-            <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
+            <!-- Slide 4 -->
+            <div class="sl-slide bg-4" data-orientation="vertical" data-slice1-rotation="-5" data-slice2-rotation="25" data-slice1-scale="2" data-slice2-scale="1">
               <div class="sl-slide-inner">
-                <div class="bg-img bg-img-3"></div>
-                <h2>Slide #3 inner</h2>
+                <div class="deco" data-icon="H"></div>
+                <h2>Slide #4</h2>
                 <blockquote>
                   <p>Some quote or caption of sorts</p>
                   <cite>Some other info (guy who said it)</cite>
                 </blockquote>
               </div>
             </div>
-
-            <!-- Slide -->
-            <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
+            <!-- Slide 5 -->
+            <div class="sl-slide bg-5" data-orientation="vertical" data-slice1-rotation="-5" data-slice2-rotation="10" data-slice1-scale="2" data-slice2-scale="1">
               <div class="sl-slide-inner">
-                <div class="bg-img bg-img-4"></div>
-                <h2>Slide #4 inner</h2>
+                <div class="deco" data-icon="H"></div>
+                <h2>Slide #5</h2>
                 <blockquote>
                   <p>Some quote or caption of sorts</p>
                   <cite>Some other info (guy who said it)</cite>
                 </blockquote>
               </div>
-            </div>
-
-            <!-- Slide -->
-            <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
-              <div class="sl-slide-inner">
-                <div class="bg-img bg-img-5"></div>
-                <h2>Slide #5 inner</h2>
-                <blockquote>
-                  <p>Some quote or caption of sorts</p>
-                  <cite>Some other info (guy who said it)</cite>
-                </blockquote>
-              </div>
-            </div>
-
-
-
-
-
-
-
-
-
-
-            <!-- Slide number 1 -->
-            <div class="sl-slide bg-1" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
-              <div class="deco" data-icon="H"></div>
-              <h2>Slide #1</h2>
-              <blockquote>
-                <p>Some quote or caption of sorts</p>
-                <cite>Some other info (guy who said it)</cite>
-              </blockquote>
-            </div>
-
-            <!-- Slide number 2 -->
-            <div class="sl-slide bg-2">
-              <div class="deco" data-icon="H"></div>
-              <h2>Slide #2</h2>
-              <blockquote>
-                <p>Some quote or caption of sorts</p>
-                <cite>Some other info (guy who said it)</cite>
-              </blockquote>
-            </div>
-
-            <!-- Slide number 3 -->
-            <div class="sl-slide bg-3">
-              <div class="deco" data-icon="H"></div>
-              <h2>Slide #3</h2>
-              <blockquote>
-                <p>Some quote or caption of sorts</p>
-                <cite>Some other info (guy who said it)</cite>
-              </blockquote>
             </div>
 
           </div>
@@ -262,7 +220,8 @@
 
 				var Page = (function() {
 
-					var $nav = $( '#nav-dots > span' ),
+					var $navArrows = $( '#nav-arrows' ),
+						$nav = $( '#nav-dots > span' ),
 						slitslider = $( '#slider' ).slitslider( {
 							onBeforeChange : function( slide, pos ) {
 
@@ -278,6 +237,21 @@
 
 						},
 						initEvents = function() {
+
+							// add navigation events
+							$navArrows.children( ':last' ).on( 'click', function() {
+
+								slitslider.next();
+								return false;
+
+							} );
+
+							$navArrows.children( ':first' ).on( 'click', function() {
+
+								slitslider.previous();
+								return false;
+
+							} );
 
 							$nav.each( function( i ) {
 
