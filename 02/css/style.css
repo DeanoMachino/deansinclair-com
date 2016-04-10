@@ -1,0 +1,127 @@
+/*
+COLOUR PALETTE
+==============
+Main:-
+  dark-red:     #b81f0f
+  red:          #cb3221
+  light-red:    #f35f4f
+
+Complementary:-
+  dark-green:   #1a50a1
+  blue:         #2164ca
+  light-green:  #6b99de
+
+Neutral:-
+  dark:         #211c19
+  dark-grey:    #322e2b
+  grey:         #939393
+  light-grey:   #dddddd
+  light:        #fdfdfd
+*/
+
+/*---------------- HEADER ----------------*/
+header {
+  z-index: 50;
+  background-color: #cb3221;
+  position:fixed;
+  top:0;
+  width:100%;
+  height: 60px;
+}
+
+/* Navigation bar */
+.ds_navbar {
+  position: relative;
+}
+
+/* Logo */
+.ds_navbar .ds_logo img {
+  float: left;
+  height: 50px;
+  margin-top: 5px;
+}
+
+/* Navigation bar pages */
+.ds_navpages {
+  list-style-type: none;
+  float: right;
+}
+.ds_navpages > li, .ds_navpages .ds_submenu {
+  display: inline-block;
+  color: #fdfdfd;
+  text-align: center;
+  text-decoration: none;
+  padding: 0px;
+  margin-left: -4px;
+}
+.ds_navpages > li > a {
+  padding: 15px;
+  padding-top: 25px;
+  display: block;
+  color: #fdfdfd;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+.ds_navpages .ds_submenu > li > a {
+  padding: 15px;
+  padding-top: 25px;
+  display: block;
+  color: #fdfdfd;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+.ds_navpages > li > a:hover {
+  background-color: #322e2b;
+  padding-top: 15px;
+}
+.ds_navpages .ds_submenu:hover > li > a{
+  background-color: #322e2b;
+  padding-top: 15px;
+}
+.ds_navpages > .active > a, .ds_navpages > .active > li > a {
+  background-color: #211c19;
+}
+.ds_navpages > .active > a:hover, .ds_navpages > .active > li > a:hover {
+  background-color: #211c19;
+}
+
+/* Page sub-menus */
+.ds_submenu {
+  display: inline-block;
+  position: relative;
+}
+.ds_submenu > .ds_submenu-content {
+  display: none;
+  position: absolute;
+  background-color: #dddddd;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  min-width: 180px;
+}
+.ds_submenu-content > li > a {
+  color: #211c19;
+  text-decoration: none;
+  text-align: left;
+  padding: 10px 15px;
+  display: block;
+  transition: all 0.2s ease-in-out;
+}
+.ds_submenu-content li > a:hover {
+  background-color: #322e2b;
+  color: #fdfdfd;
+  transform: translateX(10px);
+  margin-right: 10px;
+}
+.ds_submenu:hover .ds_submenu-content{
+  display: block;
+}
+
+/*---------------- CONTENT ---------------*/
+body {
+  margin-top: 60px;   /* Height of the header */
+  background-color: #211c19;
+}
+
+
+/*---------------- FOOTER ----------------*/

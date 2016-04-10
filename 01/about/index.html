@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href='../'>
+  <!-- <base href='http://www.deansinclair.co.uk/'> -->
+<title>Dean Sinclair | About</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/responsive.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/touchTouch.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/kwicks-slider.css" type="text/css" media="screen">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+<script src="js/jquery.js"></script>
+<script src="js/superfish.js"></script>
+<script src="js/jquery.kwicks-1.5.1.js"></script>
+<script src="js/jquery.flexslider-min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.cookie.js"></script>
+<script src="js/touchTouch.jquery.js"></script>
+<script>
+if ($(window).width() > 1024) {
+    document.write("<" + "script src='js/jquery.preloader.js'></" + "script>");
+}
+</script>
+<script>
+jQuery(window).load(function () {
+    $x = $(window).width();
+    if ($x > 1024) {
+        jQuery("#content .row").preloader();
+    }
+    jQuery('.magnifier').touchTouch();
+    jQuery('.spinner').animate({
+        'opacity': 0
+    }, 1000, 'easeOutCubic', function () {
+        jQuery(this).css('display', 'none')
+    });
+});
+</script>
+<!--[if lt IE 8]>
+<div style='text-align:center'><a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/img/upgrade.jpg"border="0"alt=""/></a></div>
+<![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<script src="js/html5.js"></script>
+<link rel="stylesheet" href="css/docs.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/ie.css" type="text/css" media="screen">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400' rel='stylesheet' type='text/css'>
+<![endif]-->
+</head>
+<body>
+<div class="spinner"></div>
+<!-- header start -->
+<header>
+  <div class="container clearfix">
+    <div class="row">
+      <div class="span12">
+        <div class="navbar navbar_">
+          <div class="container">
+            <!-- Site logo -->
+            <h1 class="brand brand_"><a href="index.html"><img alt="" src="img/logo2.png"> </a></h1>
+            <a class="btn btn-navbar btn-navbar_" data-toggle="collapse" data-target=".nav-collapse_">Menu <span class="icon-bar"></span> </a>
+            <div class="nav-collapse nav-collapse_  collapse">
+              <!-- Nav bar menus -->
+              <ul class="nav sf-menu">
+                <li><a href="index.html">Home</a></li>
+                <li class="sub-menu active"><a href="about/">About</a>
+                  <ul>
+                    <li><a href="about/#biography">Biography</a></li>
+                    <li><a href="about/#skills">Skills</a></li>
+                    <li><a href="about/#curriculum-vitae">Curriculum Vitae</a></li>
+                  </ul>
+                </li>
+                <li class="sub-menu"><a href="portfolio/">Portfolio</a>
+                  <ul>
+                    <li><a href="projects/in-search-of-evidence.html">In Search of Evidence</a></li>
+                    <li><a href="projects/monday-morning.html">Monday Morning</a></li>
+                    <li><a href="projects/brkn-rbts.html">BRKN RBTS</a></li>
+                  </ul>
+                </li>
+                <li><a href="blog/">Blog</a></li>
+                <li><a href="contact/">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<div id="top" class="bg-content">
+  <div class="container">
+    <div class="row-3">
+      <div class="span12">
+        <!-- Hello world! -->
+        <div class="block-slogan">
+          <h2>Bio</h2>
+          <div>
+            <h5>Who are you?</h5>
+            <p>I’m Dean Sinclair, a 20-year-old third year Game Development Student from Scotland, currently studying at Abertay University.</p>
+
+            <h5>What do you do?</h5>
+            <p>I make games. I'm a computer games programmer/developer.</p>
+
+            <h5>No seriously, what do you ACTUALLY do?</h5>
+            <p>I’ll be the first person to admit I’ve not made that many games (currently only like 2 besides university projects), but I’m still learning and that’s my aim.
+            <p>Besides work, I obviously like to play a lot of games myself. A few favourites currently are Rocket League, The Binding of Isaac: Rebirth, Football Manager 2016, Crusader Kings II, and Europa Universalis IV. I mainly play PC games, but I have an Xbox 360 and PlayStation Vita too (of which I play neither regularly).</p>
+            <p>I also enjoy playing music, being a guitarist and bassist. Currently between bands but I used to do a lot of live performing.</p>
+
+            <h5>What languages/software do you use?</h5>
+            <p>In university it’s often C++ that I use, although I’ve dabbled in ActionScript 3.0, Java and Python. I’ve started to use C# more these days (in part due to a university group project using the MonoGame framework) but I’m still pretty new to the language.</p>
+            <p>I generally don’t use engines (we don’t have a good working relationship, see UDK 3.0 crashing ALL THE TIME) although I’m looking to gain some experience with them in the coming year — most likely with Unity.</p>
+
+            <h5>What is this website for?</h5>
+            <p>This site acts as both a development blog for anything I’m working on, and (hopefully in the near future) as a professional portfolio of all the work I’ve created. Think of it as a sort of “central hub”. I’ll be using this to explain what I’m currently up to dev-wise and also to keep me on track with my goals.</p>
+
+            <h5>What are you currently working on?</h5>
+            <p>I’ll update this in the near future, as soon as I get myself up-to-date with all the work I’ve done in 2015 and failed to blog about. Long story short, I’m working with a group of people in creating a top-down, multiplayer racing game for a large touchscreen device, all as part of a university project.</p>
+
+            <h5>Where can I find you online?</h5>
+            <p><a href="contact/">You can contact me or get me on social media here.</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- content -->
+  <div id="content" class="content-extra">
+    <div class="ic"></div>
+
+    <div class="container">
+      <!-- Social media -->
+      <div id="social-media" class="row">
+        <article class="span12">
+          <h4>Social media...</h4>
+          <div class="wrapper">
+            <ul class="list-social">
+              <li><a class="icon-1" href="#"></a></li>
+              <li><a class="icon-2" href="#"></a></li>
+              <li><a class="icon-3" href="https://twitter.com/DeathBlossoms_/"></a></li>
+              <li><a class="icon-4" href="#"></a></li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- footer -->
+<footer>
+  <div class="container clearfix">
+
+    <div class="privacy pull-left">&copy; 2016 | Dean Sinclair | Developed from template <a href="http://www.free-css.com/free-css-templates/page182/codester">Codester</a></div>
+  </div>
+</footer>
+<script src="../js/bootstrap.js"></script>
+</body>
+</html>

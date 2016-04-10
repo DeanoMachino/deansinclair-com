@@ -60,7 +60,6 @@ a[href^="tel:"] {
 }
 /*------ body --------- */
 body{
-  margin-top: 75px;
 }
 /*------ header ------- */
 header {
@@ -180,7 +179,7 @@ header {
   background: #000;
   margin: 0;
   padding-left: 10px;
-  padding-right: 5px;
+  padding-right: 10px;
   padding-top: 10px;
 }
 .nav-collapse_ .nav ul li {
@@ -257,7 +256,7 @@ h3 {
   font-weight: normal;
 }
 .content-extra h3 {
-  margin:25px 0;
+  margin:25px;
 }
 h4 {
   font-size: 48px;
@@ -282,6 +281,7 @@ p {
 }
 .bg-content {
   background: url(../img/bg-content.jpg) 50% 50%;
+  margin-top: 75px;
 }
 .block-slogan {
   overflow: hidden;
@@ -294,15 +294,22 @@ p {
 .block-slogan h2 {
   float: left;
   margin: 0;
-  padding-right: 58px;
+  padding-right: 28px;
   line-height: 54px;
 }
+.block-slogan h5 {
+
+}
 .block-slogan p {
-  border-left: 1px solid #454545;
-  padding: 0 0 0 26px;
+  padding-bottom: 6px;
 }
 .block-slogan div {
   overflow: hidden;
+  border-left: 1px solid #454545;
+  padding: 0 0 0 26px;
+}
+.row-3 {
+  margin-top: 25px;
 }
 .row-1, .row-2 {
   background: #fff;
@@ -310,13 +317,15 @@ p {
 }
 .row-2 {
 	background:#eee;
-	text-align:center;
+	text-align:left;
 	border-top:2px dashed #ccc;
 	border-bottom:2px dashed #ccc;
-	font-style:italic;}
+	font-style:normal;
+}
 .row-2 h3 {
 	margin:10px 0;
-	font-style:normal;}
+	font-style:normal;
+}
 .ic {
   border:0;
   float:right;
