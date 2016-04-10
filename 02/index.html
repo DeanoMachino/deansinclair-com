@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="author" content="Dean Sinclair">
 
     <title>Dean Sinclair | Home</title>
 
@@ -16,6 +16,7 @@
 
     <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet">
+    <script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -28,19 +29,21 @@
 
 <body>
   <header>
-    <!-- Navigation -->
-    <!-- ========== -->
+    <!-- Navigation Bar -->
+    <!-- ============== -->
     <div class="container" style="width: 100%;">
       <div class="row">
-        <!-- Navigation bar -->
         <div class="ds_navbar span12">
+
           <!-- Logo -->
           <a href="/" class="ds_logo"><img alt="Dean Sinclair - Games Programmer" src="img/logo.png"></a>
+
           <!-- Navigation bar pages -->
           <ul class="ds_navpages">
-            <!-- Home -->
+
+            <!--| Home |-->
             <li class="active"><a href="/">Home</a></li>
-            <!-- About -->
+            <!--| About |-->
             <div class="ds_submenu">
               <li><a>About</a></li>
               <div class="ds_submenu-content">
@@ -49,20 +52,22 @@
                 <li><a href="/About/#CV">Curriculum Vitae</a></li>
               </div>
             </div>
-            <!-- Portfolio -->
+            <!--| Portfolio |-->
             <div class="ds_submenu">
               <li><a>Portfolio</a></li>
               <div class="ds_submenu-content">
+                <li class="ds_submenu-title"><a href="/Portfolio/">Portfolio Overview</a></li>
                 <li><a href="/Portfolio/Project-Cow-Racing/">Project: Cow Racing</a></li>
                 <li><a href="/Portfolio/Monday-Morning/">Monday Morning</a></li>
                 <li><a href="/Portfolio/In-Search-Of-Evidence/">In Search of Evidence</a></li>
                 <li><a href="/Portfolio/BRKN-RBTS/">BRKN RBTS</a></li>
               </div>
             </div>
-            <!-- Blog -->
+            <!--| Blog |-->
             <li><a href="/Blog/">Blog</a></li>
-            <!-- Contact -->
+            <!--| Contact |-->
             <li><a href="/Contact/">Contact</a></li>
+
           </ul>
         </div>
       </div>
@@ -72,41 +77,253 @@
 
     <!-- Page Content -->
     <!-- ============ -->
+
     <div class="ds_anchor" id="intro">
+
+      <!-- Introduction section -->
       <div class="container ds_section-01">
-        <div class="row">
-          <!-- Introduction -->
-          <div>
-            <h1>This is where i'll put some markup for a gallery carousel sort of thing.</h1>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <div class="ds_anchor">
-      <div class="container ds_section-03">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h1>A Bootstrap Starter Template</h1>
-                <h2>This is a h2 header</h2>
-                <h3>And this is a h3 header</h3>
-                <p class="lead">Paragraph: Complete with pre-defined file paths that you won't have to change!</p>
-                <ul class="list-unstyled">
-                    <li>Bootstrap v3.3.6</li>
-                    <li>jQuery v1.11.1</li>
-                </ul>
+        <!-- Gallery slider -->
+        <div id="slider" class="sl-slider-wrapper">
+          <div class="sl-slider">
+
+
+            <!-- Slide -->
+            <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
+              <div class="sl-slide-inner">
+                <div class="bg-img bg-img-1"></div>
+                <h2>Slide #1 inner</h2>
+                <blockquote>
+                  <p>Some quote or caption of sorts</p>
+                  <cite>Some other info (guy who said it)</cite>
+                </blockquote>
+              </div>
             </div>
-        </div>
+
+            <!-- Slide -->
+            <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
+              <div class="sl-slide-inner">
+                <div class="bg-img bg-img-2"></div>
+                <h2>Slide #2 inner</h2>
+                <blockquote>
+                  <p>Some quote or caption of sorts</p>
+                  <cite>Some other info (guy who said it)</cite>
+                </blockquote>
+              </div>
+            </div>
+
+            <!-- Slide -->
+            <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
+              <div class="sl-slide-inner">
+                <div class="bg-img bg-img-3"></div>
+                <h2>Slide #3 inner</h2>
+                <blockquote>
+                  <p>Some quote or caption of sorts</p>
+                  <cite>Some other info (guy who said it)</cite>
+                </blockquote>
+              </div>
+            </div>
+
+            <!-- Slide -->
+            <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
+              <div class="sl-slide-inner">
+                <div class="bg-img bg-img-4"></div>
+                <h2>Slide #4 inner</h2>
+                <blockquote>
+                  <p>Some quote or caption of sorts</p>
+                  <cite>Some other info (guy who said it)</cite>
+                </blockquote>
+              </div>
+            </div>
+
+            <!-- Slide -->
+            <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
+              <div class="sl-slide-inner">
+                <div class="bg-img bg-img-5"></div>
+                <h2>Slide #5 inner</h2>
+                <blockquote>
+                  <p>Some quote or caption of sorts</p>
+                  <cite>Some other info (guy who said it)</cite>
+                </blockquote>
+              </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+            <!-- Slide number 1 -->
+            <div class="sl-slide bg-1" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
+              <div class="deco" data-icon="H"></div>
+              <h2>Slide #1</h2>
+              <blockquote>
+                <p>Some quote or caption of sorts</p>
+                <cite>Some other info (guy who said it)</cite>
+              </blockquote>
+            </div>
+
+            <!-- Slide number 2 -->
+            <div class="sl-slide bg-2">
+              <div class="deco" data-icon="H"></div>
+              <h2>Slide #2</h2>
+              <blockquote>
+                <p>Some quote or caption of sorts</p>
+                <cite>Some other info (guy who said it)</cite>
+              </blockquote>
+            </div>
+
+            <!-- Slide number 3 -->
+            <div class="sl-slide bg-3">
+              <div class="deco" data-icon="H"></div>
+              <h2>Slide #3</h2>
+              <blockquote>
+                <p>Some quote or caption of sorts</p>
+                <cite>Some other info (guy who said it)</cite>
+              </blockquote>
+            </div>
+
+          </div>
+
+          <!-- Navigation arrows -->
+          <nav id="nav-arrows" class="nav-arrows">
+            <span class="nav-arrow-prev">Previous</span>
+            <span class="nav-arrow-next">Next</span>
+          </nav>
+
+          <!-- Navigation dots -->
+          <nav id="nav-dots" class="nav-dots">
+            <span class="nav-dot-current"></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </nav>
+
+        <h1>HEADING</h1>
       </div>
     </div>
+  </div>
 
 
-    <!-- jQuery Version 1.11.1 -->
-    <script src="js/jquery.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
 
+
+
+
+  <div class="ds_anchor">
+    <div class="container ds_section-03">
+      <div class="row">
+          <div class="col-lg-12 text-center">
+              <h1>A Bootstrap Starter Template</h1>
+              <h2>This is a h2 header</h2>
+              <h3>And this is a h3 header</h3>
+              <p class="lead">Paragraph: Complete with pre-defined file paths that you won't have to change!</p>
+              <ul class="list-unstyled">
+                  <li>Bootstrap v3.3.6</li>
+                  <li>jQuery v1.11.1</li>
+              </ul>
+          </div>
+      </div>
+    </div>
+  </div>
+  <div class="ds_anchor">
+    <div class="container ds_section-02">
+      <div class="row">
+          <div class="col-lg-12 text-center">
+              <h1>A Bootstrap Starter Template</h1>
+              <h2>This is a h2 header</h2>
+              <h3>And this is a h3 header</h3>
+              <p class="lead">Paragraph: Complete with pre-defined file paths that you won't have to change!</p>
+              <ul class="list-unstyled">
+                  <li>Bootstrap v3.3.6</li>
+                  <li>jQuery v1.11.1</li>
+              </ul>
+          </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- jQuery Version 1.11.1 -->
+  <script src="js/jquery.js"></script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="js/bootstrap.min.js"></script>
+
+  <script type="text/javascript" src="js/jquery.ba-cond.min.js"></script>
+  <script type="text/javascript" src="js/jquery.slider.js"></script>
+  <script type="text/javascript">
+			$(function() {
+
+				var Page = (function() {
+
+					var $nav = $( '#nav-dots > span' ),
+						slitslider = $( '#slider' ).slitslider( {
+							onBeforeChange : function( slide, pos ) {
+
+								$nav.removeClass( 'nav-dot-current' );
+								$nav.eq( pos ).addClass( 'nav-dot-current' );
+
+							}
+						} ),
+
+						init = function() {
+
+							initEvents();
+
+						},
+						initEvents = function() {
+
+							$nav.each( function( i ) {
+
+								$( this ).on( 'click', function( event ) {
+
+									var $dot = $( this );
+
+									if( !slitslider.isActive() ) {
+
+										$nav.removeClass( 'nav-dot-current' );
+										$dot.addClass( 'nav-dot-current' );
+
+									}
+
+									slitslider.jump( i + 1 );
+									return false;
+
+								} );
+
+							} );
+
+						};
+
+						return { init : init };
+
+				})();
+
+				Page.init();
+
+				/**
+				 * Notes:
+				 *
+				 * example how to add items:
+				 */
+
+				/*
+
+				var $items  = $('<div class="sl-slide sl-slide-color-2" data-orientation="horizontal" data-slice1-rotation="-5" data-slice2-rotation="10" data-slice1-scale="2" data-slice2-scale="1"><div class="sl-slide-inner bg-1"><div class="sl-deco" data-icon="t"></div><h2>some text</h2><blockquote><p>bla bla</p><cite>Margi Clarke</cite></blockquote></div></div>');
+
+				// call the plugin's add method
+				ss.add($items);
+
+				*/
+
+			});
+		</script>
 </body>
 
 </html>
